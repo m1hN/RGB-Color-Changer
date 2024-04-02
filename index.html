@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>RGB Colors</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body id="body">
+    <h1>RGB Colors</h1>
+    <p>
+      An RGB Color is specified by:
+      <span class="rgb-code">rgb(red, green, blue)</span>
+    </p>
+    <p>
+      The parameters red, green and blue specify the intensity of the color:<br />
+      0 <em>(lowest)</em> to 255 <em>(highest)</em>
+    </p>
+    <hr />
+
+    <h3>Try it for yourself...</h3>
+    <p>
+      <i
+        >Preview Width:
+        <input
+          type="number"
+          id="width"
+          min="50"
+          max="400"
+          step="10"
+          value="400" />
+        Preview Height:
+        <input
+          type="number"
+          id="height"
+          min="50"
+          max="400"
+          step="10"
+          value="200"
+      /></i>
+    </p>
+    <p>
+      red:
+      <input id="redIn" type="number" min="0" max="255" step="5" value="255" />
+      green:
+      <input
+        id="greenIn"
+        type="number"
+        min="0"
+        max="255"
+        step="5"
+        value="255"
+      />
+      blue:
+      <input id="blueIn" type="number" min="0" max="255" step="5" value="0" />
+    </p>
+
+    <p>
+      <button id="blackbtn">BLACK</button><button id="whitebtn">WHITE</button>
+    </p>
+
+    <div id="display"></div>
+
+    <p class="rgb-code" id="rgbStrOut">rgb(255, 255, 0)</p>
+    <hr />
+
+    <p class="font">
+      <a href="https://en.wikipedia.org/wiki/RGB_color_model">Learn more</a>
+      about RGB Color on Wikipedia
+    </p>
+  </body>
+</html>
